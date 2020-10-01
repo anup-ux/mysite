@@ -5,6 +5,9 @@ body {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+ .navbar {
+        background-color: #e4f9f5;
+    }
 
   ul li {
         display: inline-block;
