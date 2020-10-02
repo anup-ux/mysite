@@ -39,6 +39,7 @@ body {
 @media screen and (max-width: 480px) {
   .navbar {
     margin-left:1rem;
+    background-color:red;
   }
 }
 h1 {
