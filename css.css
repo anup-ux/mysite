@@ -36,12 +36,7 @@ body {
     .navbar {
         animation: 1s ease-out 0s 1 slideInFromtop;
     }
-@media screen and (max-width: 480px) {
-  .navbar {
-    margin-left:1rem;
-    background-color:red;
-  }
-}
+
 h1 {
     line-height: 2;
     color: #66bfbf;
