@@ -1,41 +1,42 @@
 body {
     columns: #40514e;
     margin: 0px;
-    padding:0px;
     text-align: center;
     font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
 }
- .navbar {
-        background-color: #e4f9f5;
-    }
+.navbar {
+    background-color: #e4f9f5;
+}
 
-  ul li {
-        display: inline-block;
-        padding: 1rem;
+ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.nav-anchor {
+    font-family: cursive;
+    text-decoration: none !important;
+    color:#66bfbf;
+}
+
+.nav-anchor:hover {
+    color: #aaaaaa;
+}
+
+@keyframes slideInFromtop {
+    0% {
+        transform: translateY(-100%);
     }
-    
-    .nav-anchor {
-        font-family: cursive;
-        text-decoration: none !important;
-        color:#66bfbf;
+    100% {
+        transform: translateY(0);
     }
-    
-    .nav-anchor:hover {
-        color: #aaaaaa;
-    }
-    
-    @keyframes slideInFromtop {
-        0% {
-            transform: translateY(-100%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    
-    .navbar {
-        animation: 1s ease-out 0s 1 slideInFromtop;
-    }
+}
+
+.navbar {
+    animation: 1s ease-out 0s 1 slideInFromtop;
+}
 
 h1 {
     line-height: 2;
@@ -70,12 +71,16 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .top-container {
+    width: 100%;
     background-color: #e4f9f5;
     position: relative;
     padding-top: 100px;
 }
-
+#mountain{
+    width: 570px;
+}
 .profile {
     margin-top: 1%;
     border-radius: 60%;
@@ -141,4 +146,14 @@ a:hover {
     color: #eaf6f6;
     font-size: 0.75rem;
     padding: 20px 0px;
+}
+@media only screen and (max-width: 1000px) {
+    .bot-cloud{
+        top: 424px;
+        left: auto;
+    }
+    .navbar{
+        align-items: center !important;
+        justify-content: center !important;
+    }
 }
